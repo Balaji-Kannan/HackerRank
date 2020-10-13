@@ -1,0 +1,18 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        String s = scan.nextLine();
+        StringTokenizer a=new StringTokenizer(s," !,?_.'@");
+        int n=a.countTokens();
+        System.out.println(n);
+        while(a.hasMoreTokens())
+        System.out.println(a.nextToken());
+        // Write your code here.
+        scan.close();
+    }
+}
+

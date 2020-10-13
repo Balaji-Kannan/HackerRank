@@ -1,0 +1,18 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args)throws IOException {
+    BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+   String s="";
+   int a=1;
+    while((s=br.readLine())!=null)
+    System.out.println((a++)+" "+s);
+    br.close();
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    }
+}

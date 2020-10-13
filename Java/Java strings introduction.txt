@@ -1,0 +1,32 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        
+        Scanner sc=new Scanner(System.in);
+        String a=sc.next();
+        String b=sc.next();
+        /* Enter your code here. Print output to STDOUT. */
+        int n=a.length()+b.length();
+        System.out.println(n);
+char ch[]=a.toCharArray();
+ch[0]=Character.toUpperCase(ch[0]);
+String A=new String(ch);
+ch=b.toCharArray();
+ch[0]=Character.toUpperCase(ch[0]);
+String B=new String(ch);
+        int m =A.compareToIgnoreCase(B);
+        if(m>0){System.out.println("Yes");
+       
+       
+       }
+        else
+        System.out.println("No");
+        System.out.println(A+" "+B);
+    }
+}
+
+
+
