@@ -1,0 +1,28 @@
+
+/*
+ * Create classes Rectangle and RectangleArea
+ */
+ class Rectangle{protected:
+     int w,h;
+     public:
+     void display()
+     {
+         cout<<w<<" "<<h<<endl;
+     }
+ };
+ class RectangleArea: public Rectangle
+ {
+     int area;
+     public:
+     void read_input()
+     {
+         cin>>w>>h;
+
+     }
+     void display()
+     {
+         area=w*h;
+         cout<<area<<endl;
+     }
+ };
+

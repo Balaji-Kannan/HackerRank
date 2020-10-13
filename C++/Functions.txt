@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+/*
+Add `int max_of_four(int a, int b, int c, int d)` here.
+*/
+void max_of_four(int,int,int,int);
+int main() {
+    int a, b, c, d;
+    cin>>a>>b>>c>>d;
+
+     max_of_four(a, b, c, d);
+    cout<<endl;
+    
+    return 0;
+}
+
+void max_of_four(int a,int b,int c,int d)
+{int bi;
+if(a>b){if(a>c){if(a>d)bi=a;else bi=d;}else bi=c;}
+else if(b>c){if(b>d)bi=b;else bi=d;}
+else if(c>d){bi=c;}
+else{ bi=d;}
+cout<<bi;}
